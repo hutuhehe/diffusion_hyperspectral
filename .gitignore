@@ -1,0 +1,16 @@
+# Ignore everything in the pixel_classifier directory
+pixel_classifier/
+
+# Ignore all .pt files
+*.pt
+
+# Ignore all the dataset files
+datasets/
+
+# Ignore checkpoints directory
+checkpoints/
+
+# Ignore specific datasets
+HS_MS Houston2013/
+HS_SAR Berlin/
+HS_SAR_DSM Augsburg/

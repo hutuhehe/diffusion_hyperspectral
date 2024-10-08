@@ -1,0 +1,53 @@
+{
+  "exp_dir": "pixel_classifiers/Berlin_benchmark/datasetDDPM",
+  
+
+  "model_type": "ddpm",
+  
+  "category": "Berlin_benchmark",
+  "number_class": 8,
+  "ignore_label": 0,
+  "bands_num": 244,
+   
+  "training_path": "datasets/Berlin_benchmark/Berlin_benchmark_train_data_32",
+
+  
+  "testing_path": "datasets/Berlin_benchmark/Berlin_benchmark_test_data_32",
+
+
+  "train_data_pt_file":"datasets/Berlin_benchmark/train_data_berlin.pt",
+
+
+  "test_label_calculate_metric": "datasets/Berlin_benchmark/test_label_berlin.npy",
+
+  "model_path": "checkpoints/ddpm/64x64_diffusion.pt",
+
+  "dim": [64, 64, 8064],
+  "steps": [50,150,250],
+  "blocks": [2,3,4,7],
+  "model_num": 10,
+  "batch_size": 64,
+  "max_training": 30, 
+
+  "learning_rate": 0.003,
+
+
+  "mix_up_alpha": 0.2,
+  "lam_spatial_weight":0.5,
+  "lam_spectral_weight":0.5,
+  
+  "training_number": 742,
+  "testing_number": 742,
+
+  "deeplab_res": 64,
+  "upsample_mode":"bilinear",
+  "share_noise": true,
+  "input_activations": false,
+
+  "img_width_orig": 476,
+  "img_height_orig":1723,
+  "img_width_adjusted":480,
+  "img_height_adjusted":1728
+
+
+ }

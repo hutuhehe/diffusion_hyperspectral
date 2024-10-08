@@ -1,0 +1,7 @@
+torch==2.2.2
+torchvision==0.17.2
+blobfile==2.1.1
+tqdm==4.62.3
+opencv-python==4.5.4.60
+mpi4py
+timm==0.4.12

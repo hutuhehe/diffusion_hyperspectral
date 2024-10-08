@@ -1,0 +1,57 @@
+{
+  "exp_dir": "pixel_classifiers/Augsburg_Benchmark/datasetDDPM",
+  
+
+  "model_type": "ddpm",
+  
+  "category": "Augsburg",
+  "number_class": 7,
+  "ignore_label": 0,
+  "bands_num": 180,
+   
+  "training_path": "datasets/Augsburg_benchmark/Augsburg_train_data_32",
+
+  
+  "testing_path": "datasets/Augsburg_benchmark/Augsburg_test_data_32",
+
+
+  "train_data_pt_folder":"datasets/Augsburg_benchmark/",
+
+
+  "test_label_calculate_metric": "datasets/Augsburg_benchmark/test_label_Augsburg.npy",
+
+  "model_path": "checkpoints/ddpm/64x64_diffusion.pt",
+
+  "dim": [64, 64, 384],
+  "steps": [0],
+  "blocks": [10],
+  "model_num": 1,
+  "batch_size": 64,
+  "max_training": 1, 
+  "learning_rate": 0.003,
+  "max_epoch":10 ,
+
+
+  "mix_up_alpha": 0.25,
+  "lam_spatial_weight":0.2,
+  "lam_spectral_weight":0.8,
+
+
+  "sample_weights":[0.04794521, 0.02651515, 0.33, 0.028, 0.26, 1.0 , 0.30434783],
+  
+  "model_name": "Conv1d",
+  "training_number": 150,
+  "testing_number": 150,
+
+  "deeplab_res": 32,
+  "upsample_mode":"bilinear",
+  "share_noise": true,
+  "input_activations": false,
+
+  "img_width_orig": 485,
+  "img_height_orig":332,
+  "img_width_adjusted":512,
+  "img_height_adjusted":352
+
+
+ }

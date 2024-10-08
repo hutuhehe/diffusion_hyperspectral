@@ -1,0 +1,30 @@
+{
+  "exp_dir": "pixel_classifiers/hyperspectral_64_slide/datasetDDPM",
+  
+
+  "model_type": "ddpm",
+  
+  "category": "hyperspectral_64",
+  "number_class": 15,
+  "ignore_label": -100,
+
+  "training_path": "datasets/hyperspectral_64_slide/hyper_64_test_stride_32",
+  "validation_path": "datasets/bedroom_28/real/train",
+  "testing_path": "datasets/hyperspectral_64_slide/hyper_64_test_stride_32",
+  "model_path": "checkpoints/ddpm/64x64_diffusion.pt",
+
+  "dim": [64, 64, 8064],
+  "steps": [50,150,250],
+  "blocks": [2,3,4,7],
+  "model_num": 10,
+  "batch_size": 32,
+  "max_training": 30, 
+  
+  "training_number": 590,
+  "testing_number": 590,
+
+  "deeplab_res": 64,
+  "upsample_mode":"bilinear",
+  "share_noise": true,
+  "input_activations": false
+ }

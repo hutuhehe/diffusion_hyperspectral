@@ -1,0 +1,37 @@
+{
+  "exp_dir": "pixel_classifiers/hyperspectral_64_slide_spectral/datasetDDPM",
+  
+
+  "model_type": "ddpm",
+  
+  "category": "hyperspectral_64",
+  "number_class": 15,
+  "ignore_label": -100,
+  "bands_num": 144,
+
+  "training_path": "datasets/hyperspectral_64_slide_spectral/hyper_64_train_data_stride_32",
+  "validation_path": "datasets/bedroom_28/real/train",
+  "testing_path": "datasets/hyperspectral_64_slide_spectral/hyper_64_test_data_stride_32",
+  "model_path": "checkpoints/ddpm/64x64_diffusion.pt",
+
+  "dim": [64, 64, 8064],
+  "steps": [50,150,250],
+  "blocks": [2,3,4,7],
+  "model_num": 5,
+  "batch_size": 32,
+  "max_training": 30, 
+  
+  "training_number": 590,
+  "testing_number": 590,
+
+  "deeplab_res": 64,
+  "upsample_mode":"bilinear",
+  "share_noise": true,
+  "input_activations": false,
+
+  "img_width_orig":1905,
+  "img_height_orig":349,
+  "img_width_adjusted":1920,
+  "img_height_adjusted":352
+
+ }
